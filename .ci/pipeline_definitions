@@ -12,7 +12,6 @@ gardener-extension-os-ubuntu-alicloud:
             image: 'eu.gcr.io/gardener-project/gardener/extensions/os-ubuntu-alicloud'
             dockerfile: 'Dockerfile'
             target: gardener-extension-os-ubuntu-alicloud
-    steps: ~
   jobs:
     head-update:
       traits:
