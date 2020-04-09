@@ -3,7 +3,7 @@ FROM golang:1.13.8 AS builder
 
 WORKDIR /go/src/github.com/gardener/gardener-extension-os-ubuntu-alicloud
 COPY . .
-RUN make install
+RUN make install-requirements && make generate && make install
 
 ############# gardener-extension-os-ubuntu-alicloud
 FROM alpine:3.11.3 AS gardener-extension-os-ubuntu-alicloud
