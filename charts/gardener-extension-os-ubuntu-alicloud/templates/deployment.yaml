@@ -20,6 +20,7 @@ spec:
         app.kubernetes.io/name: gardener-extension-os-ubuntu-alicloud
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
+      priorityClassName: gardener-extension-os-ubuntu-alicloud
       serviceAccountName: gardener-extension-os-ubuntu-alicloud
       containers:
       - name: gardener-extension-os-ubuntu-alicloud
