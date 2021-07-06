@@ -3,6 +3,12 @@
 [![CI Build status](https://concourse.ci.gardener.cloud/api/v1/teams/gardener/pipelines/gardener-extension-os-ubuntu-alicloud-master/jobs/master-head-update-job/badge)](https://concourse.ci.gardener.cloud/teams/gardener/pipelines/gardener-extension-os-ubuntu-alicloud-master/jobs/master-head-update-job)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gardener/gardener-extension-os-ubuntu-alicloud)](https://goreportcard.com/report/github.com/gardener/gardener-extension-os-ubuntu-alicloud)
 
+## Deprecation Note
+
+:warning: This repository is not actively maintained anymore in favor of its substitute https://github.com/gardener/gardener-extension-os-ubuntu which supports Ubuntu on Alicloud since version v1.11.0.
+
+## How does it work
+
 This controller operates on the [`OperatingSystemConfig`](https://github.com/gardener/gardener/blob/master/docs/proposals/01-extensibility.md#cloud-config-user-data-for-bootstrapping-machines) resource in the `extensions.gardener.cloud/v1alpha1` API group. It manages those objects that are requesting [Ubuntu OS](https://www.ubuntu.com/) configuration (`.spec.type=ubuntu-alicloud`):
 
 ```yaml
